@@ -1,19 +1,19 @@
-# 🎬 Movie Rating Prediction with Python
+# 🎬 Movie Rating Prediction using Python & Machine Learning
 
 ## 📌 Project Overview
 
-Movie Rating Prediction is a Machine Learning regression project that predicts the IMDb rating of a movie based on its characteristics such as genre, director, cast, duration, release year, and number of votes.
+The **Movie Rating Prediction** project is an end-to-end Machine Learning regression project that predicts IMDb movie ratings based on various movie attributes such as **genre, director, actors, release year, duration, and number of votes**.
 
-The project demonstrates a complete end-to-end Machine Learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model building, evaluation, and prediction using Python and Scikit-learn.
+This project demonstrates the complete Machine Learning workflow, including **data cleaning, exploratory data analysis (EDA), feature engineering, model building, evaluation, feature importance analysis, and prediction** using Python and Scikit-learn.
 
 ---
 
 ## 🎯 Objectives
 
 - Clean and preprocess real-world movie data.
-- Perform Exploratory Data Analysis (EDA) to identify patterns and trends.
-- Engineer relevant features for machine learning.
-- Build a regression model to predict movie ratings.
+- Perform Exploratory Data Analysis (EDA) to identify trends and patterns.
+- Engineer meaningful features for machine learning.
+- Build a regression model to predict IMDb movie ratings.
 - Evaluate model performance using multiple regression metrics.
 - Save the trained model for future predictions.
 
@@ -35,9 +35,9 @@ The project demonstrates a complete end-to-end Machine Learning workflow, includ
 - Actor 3
 - Number of Votes
 
-**Target Variable**
+### Target Variable
 
-- ⭐ Rating
+⭐ **Rating**
 
 ---
 
@@ -57,39 +57,34 @@ The project demonstrates a complete end-to-end Machine Learning workflow, includ
 ## 📊 Project Workflow
 
 ### 1️⃣ Data Collection
-
-- Loaded IMDb Movies India dataset.
+- Loaded the IMDb Movies India dataset.
 
 ### 2️⃣ Data Cleaning
-
 - Removed duplicate records.
 - Handled missing values.
-- Converted Year into numeric format.
-- Converted Duration into minutes.
-- Cleaned Votes column.
-- Removed unnecessary characters.
+- Converted **Year** into numeric format.
+- Converted **Duration** into minutes.
+- Cleaned and converted the **Votes** column.
+- Removed unnecessary characters and formatted the data.
 
 ### 3️⃣ Exploratory Data Analysis (EDA)
-
-Performed detailed data visualization to understand:
+Performed detailed visualizations to understand:
 
 - Rating Distribution
-- Movie Duration Distribution
+- Duration Distribution
 - Most Frequent Genres
 - Top Directors
-- Correlation Analysis
+- Correlation Heatmap
 - Feature Relationships
 
 ### 4️⃣ Feature Engineering
-
-- Handled categorical features.
+- Handled missing values.
 - One-Hot Encoding for categorical variables.
-- Median imputation for numerical values.
-- Most Frequent imputation for categorical values.
+- Median imputation for numerical features.
+- Most Frequent imputation for categorical features.
 
 ### 5️⃣ Model Building
-
-Built a Machine Learning Pipeline consisting of:
+Built a Machine Learning Pipeline using:
 
 - ColumnTransformer
 - SimpleImputer
@@ -98,66 +93,84 @@ Built a Machine Learning Pipeline consisting of:
 
 ### 6️⃣ Model Evaluation
 
-Performance evaluated using:
+The model was evaluated using:
 
 - Mean Absolute Error (MAE)
 - Root Mean Squared Error (RMSE)
 - R² Score
 
-### 7️⃣ Model Saving
+### 7️⃣ Feature Importance
 
-Saved the trained model using Joblib for future predictions.
+- Identified the most influential features affecting movie ratings.
+- Visualized feature importance using Random Forest.
 
+### 8️⃣ Model Saving
 
-
-## 📈 Machine Learning Pipeline
-
-```
-Dataset
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Train-Test Split
-      │
-      ▼
-Random Forest Regressor
-      │
-      ▼
-Model Evaluation
-      │
-      ▼
-Prediction
-      │
-      ▼
-Model Saving
-
-## 📊 Evaluation Metrics
-
-The model performance was evaluated using:
-
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
-These metrics help assess prediction accuracy and the model's ability to generalize to unseen data.
+- Saved the trained model using **Joblib** for future predictions.
 
 ---
 
-## 📷 Sample Visualizations
+## 📈 Machine Learning Pipeline
 
-The project includes several visualizations such as:
+```text
+IMDb Movie Dataset
+        │
+        ▼
+ Data Collection
+        │
+        ▼
+ Data Cleaning
+        │
+        ▼
+ Exploratory Data Analysis (EDA)
+        │
+        ▼
+ Feature Engineering
+        │
+        ▼
+ Train-Test Split
+        │
+        ▼
+ Data Preprocessing
+(SimpleImputer + OneHotEncoder)
+        │
+        ▼
+ Random Forest Regressor
+        │
+        ▼
+ Model Evaluation
+        │
+        ▼
+ Feature Importance
+        │
+        ▼
+ Movie Rating Prediction
+        │
+        ▼
+ Save Trained Model (.pkl)
+```
+
+---
+
+## 📊 Evaluation Metrics
+
+The regression model was evaluated using:
+
+- ✅ Mean Absolute Error (MAE)
+- ✅ Root Mean Squared Error (RMSE)
+- ✅ R² Score
+
+These metrics help measure prediction accuracy and the model's ability to generalize to unseen data.
+
+---
+
+## 📷 Project Visualizations
+
+The project includes the following visualizations:
 
 - Rating Distribution
 - Duration Distribution
-- Top Movie Genres
+- Genre Distribution
 - Top Directors
 - Correlation Heatmap
 - Actual vs Predicted Ratings
@@ -167,42 +180,107 @@ The project includes several visualizations such as:
 
 ## 💡 Key Insights
 
-- Movies with higher vote counts generally receive more stable ratings.
-- Duration has a moderate influence on movie ratings.
-- Directors and genres significantly impact predicted ratings.
-- Feature engineering and proper preprocessing improve model performance.
+- Movies with a higher number of votes generally have more reliable ratings.
+- Genre and Director significantly influence movie ratings.
+- Duration has a moderate impact on predicted ratings.
+- Feature engineering and preprocessing improved the overall model performance.
 
 ---
 
 ## 🚀 Future Improvements
 
 - Hyperparameter tuning using GridSearchCV.
-- Compare multiple regression algorithms.
+- Compare multiple regression models.
 - Implement XGBoost and LightGBM.
 - Deploy the model using Streamlit or Flask.
-- Build an interactive web application for rating prediction.
+- Build an interactive Movie Rating Prediction web application.
+
+---
+
+## 📁 Project Structure
+
+```text
+Movie-Rating-Prediction/
+│
+├── IMDb Movies India.csv
+├── Movie_Rating_Prediction.ipynb
+├── README.md
+├── requirements.txt
+├── movie_rating_model.pkl
+├── feature_importance.csv
+└── images/
+    ├── rating_distribution.png
+    ├── duration_distribution.png
+    ├── feature_importance.png
+    └── prediction_vs_actual.png
+```
+
+---
 
 ## 📌 Requirements
 
+```text
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
 joblib
+jupyter
+```
+
+Install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/nayakanusmita69-beep/CODSOFT.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd Task-2-Movie-Rating-Prediction
+```
+
+3. Install the required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Open the Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+5. Run all cells in **Movie_Rating_Prediction.ipynb**
+
+---
 
 ## 🎯 Skills Demonstrated
 
 - Data Cleaning
 - Data Preprocessing
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
+- Data Visualization
 - Feature Engineering
 - Machine Learning
 - Regression Modeling
+- Random Forest Regression
+- Feature Importance Analysis
 - Model Evaluation
-- Data Visualization
-- Python Programming
 - Scikit-learn Pipeline
+- Python Programming
 
 ---
 
@@ -212,10 +290,18 @@ joblib
 
 📍 Bhubaneswar, Odisha, India
 
-🔗 LinkedIn: https://www.linkedin.com/in/anusmita-yogamaya-nayak-179575334
+🔗 **LinkedIn**  
+https://www.linkedin.com/in/anusmita-yogamaya-nayak-179575334
 
-💻 GitHub: https://github.com/nayakanusmita69-beep
+💻 **GitHub**  
+https://github.com/nayakanusmita69-beep
 
 ---
 
-⭐ If you found this project helpful, consider giving it a star on GitHub!
+## 📄 License
+
+This project was developed for learning purposes as part of the **CodSoft Data Science Internship**.
+
+---
+
+⭐ **If you found this project useful, consider giving it a ⭐ on GitHub!**

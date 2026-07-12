@@ -184,16 +184,12 @@ The project includes several visualizations such as:
 
 ## 📌 Requirements
 
-```
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
 joblib
-```
-
----
 
 ## 🎯 Skills Demonstrated
 

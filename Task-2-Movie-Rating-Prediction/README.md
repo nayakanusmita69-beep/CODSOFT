@@ -182,38 +182,6 @@ The project includes several visualizations such as:
 - Deploy the model using Streamlit or Flask.
 - Build an interactive web application for rating prediction.
 
----
-
-## ▶️ How to Run
-
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/Movie-Rating-Prediction.git
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```
-Movie_Rating_Prediction.ipynb
-```
-
-Run all cells.
-
----
-
 ## 📌 Requirements
 
 ```

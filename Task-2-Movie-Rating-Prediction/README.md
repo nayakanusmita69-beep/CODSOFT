@@ -197,25 +197,6 @@ The project includes the following visualizations:
 
 ---
 
-## 📁 Project Structure
-
-```text
-Movie-Rating-Prediction/
-│
-├── IMDb Movies India.csv
-├── Movie_Rating_Prediction.ipynb
-├── README.md
-├── requirements.txt
-├── movie_rating_model.pkl
-├── feature_importance.csv
-└── images/
-    ├── rating_distribution.png
-    ├── duration_distribution.png
-    ├── feature_importance.png
-    └── prediction_vs_actual.png
-```
-
----
 
 ## 📌 Requirements
 
@@ -234,36 +215,6 @@ Install all dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/nayakanusmita69-beep/CODSOFT.git
-```
-
-2. Navigate to the project folder
-
-```bash
-cd Task-2-Movie-Rating-Prediction
-```
-
-3. Install the required libraries
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Open the Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-5. Run all cells in **Movie_Rating_Prediction.ipynb**
 
 ---
 

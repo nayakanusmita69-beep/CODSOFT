@@ -117,53 +117,6 @@ Petal measurements are the most significant features for distinguishing Iris spe
 
 ---
 
-## 📁 Project Structure
-
-```
-Iris-Flower-Classification/
-│
-├── IRIS.csv
-├── Iris_Flower_Classification.ipynb
-├── README.md
-├── requirements.txt
-├── iris_model.pkl            (Optional)
-├── feature_importance.png    (Optional)
-├── confusion_matrix.png      (Optional)
-└── pairplot.png              (Optional)
-```
-
----
-
-## ▶️ How to Run
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/your-username/Iris-Flower-Classification.git
-```
-
-### Navigate to the Project
-
-```bash
-cd Iris-Flower-Classification
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open **Iris_Flower_Classification.ipynb** and run all the cells.
-
----
-
 ## 📦 Requirements
 
 ```
